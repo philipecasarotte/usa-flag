@@ -1,0 +1,49 @@
+$bgcolor: white
+$fullline: 100%
+$gloryred: #BF0A30
+$gloryblue: #002868
+$glorywhite: white
+
+*
+	margin: 0
+	padding: 0
+
+body
+	background-color: $glorywhite
+	font-family: "Arial", sans-serif
+
+#stars
+	box-sizing: border-box
+	background-color: $gloryblue
+	width: 40%
+	height: 53.84617vh
+	float: left
+	position: absolute
+	left: 0
+	top: 0
+	z-index: 99
+	padding: 1%
+
+#stars span
+	float: left
+	height: 5%
+	margin: 0 3% 5% 0
+	width: 5%
+	color: white
+	display: block
+	font-size: 2em
+
+#lines
+	float: left
+	width: 100%
+	height: 100vh
+	position: absolute
+	
+#lines-top div, #lines div
+	width: $fullline
+	float: left
+	height: 7.69231vh
+	background-color: $glorywhite
+
+#lines-top div:nth-child(odd), #lines div:nth-child(odd)
+	background-color: $gloryred
