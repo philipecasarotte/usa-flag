@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  transition: all 0.5s linear; }
 
 body {
   background-color: white;
@@ -16,16 +17,27 @@ body {
   left: 0;
   top: 0;
   z-index: 99;
-  padding: 1%; }
+  padding: 0.5% 1%;
+  text-align: center; }
+
+#stars div:first-child {
+  margin-top: 0; }
+
+#stars div {
+  margin-top: -3.5%;
+  width: 100%;
+  position: relative; }
 
 #stars span {
-  float: left;
-  height: 5%;
-  margin: 0 3% 5% 0;
-  width: 5%;
+  height: 3.5%;
+  margin: 0 4.4%;
+  width: 3.5%;
   color: white;
-  display: block;
-  font-size: 2em; }
+  font-size: 3.5vw; }
+
+#stars div span:first-child {
+  color: yellow;
+  margin-left: 1%; }
 
 #lines {
   float: left;
@@ -33,11 +45,20 @@ body {
   height: 100vh;
   position: absolute; }
 
-#lines-top div, #lines div {
+#lines div {
   width: 100%;
   float: left;
   height: 7.69231vh;
   background-color: white; }
 
-#lines-top div:nth-child(odd), #lines div:nth-child(odd) {
+#lines div:nth-child(odd) {
   background-color: #BF0A30; }
+
+#lines div h2 {
+  opacity: 0;
+  text-align: right;
+  margin-right: -200px; }
+
+#lines div:hover > h2 {
+  opacity: 1;
+  margin-right: 0; }
