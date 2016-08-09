@@ -7,17 +7,17 @@ $glorywhite: white
 *
 	margin: 0
 	padding: 0
-	transition: all 0.5s linear
+	box-sizing: border-box
+	transition: all 0.2s linear
 
 body
 	background-color: $glorywhite
 	font-family: "Arial", sans-serif
 
 #stars
-	box-sizing: border-box
 	background-color: $gloryblue
 	width: 40%
-	height: 53.84617vh
+	height: 53.84617%
 	float: left
 	position: absolute
 	left: 0
@@ -39,7 +39,7 @@ body
 	margin: 0 4.4%
 	width: 3.5%
 	color: white
-	font-size: 3.5vw
+	font-size: 3.5%
 	
 #stars div span:first-child
 	color: yellow
@@ -48,14 +48,15 @@ body
 #lines
 	float: left
 	width: 100%
-	height: 100vh
+	height: 100%
 	position: absolute
 	
 #lines div
 	width: $fullline
-	float: left
-	height: 7.69231vh
+	height: 7.69231%
 	background-color: $glorywhite
+	cursor: pointer
+	overflow: hidden
 
 #lines div:nth-child(odd)
 	background-color: $gloryred
@@ -65,6 +66,20 @@ body
 	text-align: right
 	margin-right: -200px
 
+#lines div:hover
+	-webkit-perspective: 350px
+	perspective: 350px
+	width: 90%
+	transform: perspective( 600px )
+
 #lines div:hover > h2
 	opacity: 1
 	margin-right: 0
+	
+@media screen and (orientation:portrait)
+	#stars
+		width: 100%
+		height: 43.84617%
+
+	#lines
+		top: 43.84617%
