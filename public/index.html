@@ -4,6 +4,7 @@
 		<meta charset="UTF-8"/>
 		<title>USA Flag</title>
 		<script src="/js/main.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" href="/css/style.css"/>
 	</head>
 	<body>
@@ -77,9 +78,9 @@
 				<span title="Hawaii">&#10029;</span>
 			</div>
 		</section>
-		<section id="lines" ng-controller="MainController">
+		<section id="lines">
 			<div title="New Hampshire">
-				<h2>{{message}}</h2>
+				<h2>New Hampshire</h2>
 			</div>
 			<div title="Massachusetts">
 				<h2>Massachusetts</h2>
@@ -118,5 +119,8 @@
 				<h2>Georgia</h2>
 			</div>
 		</section>
+		<footer ng-controller="MainController">
+			{{message}}
+		</footer>
 	</body>
 </html>
