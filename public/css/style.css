@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   z-index: 99;
-  padding: 0.5% 1%;
+  padding: 1% 1% 1% 1%;
   text-align: center; }
 
 #stars div:first-child {
@@ -35,10 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 #stars span {
-  text-indent: -99999px;
+  text-indent: -199px;
+  overflow: hidden;
   margin: 0 5%;
   color: white;
-  font-size: 3vw;
   cursor: pointer;
   font-weight: normal;
   display: inline-block;
@@ -48,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 100% 100%; }
 
 #stars span:hover {
-  color: yellow;
   transform: scale(1.8);
   -moz-transform: scale(1.8);
   -webkit-transform: scale(1.8);
   -o-transform: scale(1.8);
-  -ms-transform: scale(1.8); }
+  -ms-transform: scale(1.8);
+  text-indent: inherit; }
 
 #lines {
   float: left;
@@ -106,15 +106,15 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (orientation: portrait) {
   #stars {
     width: 100%;
-    height: 43.84617%; }
+    height: 53.84617%;
+    padding: 4% 1% 0 1%; }
 
   #stars div {
     margin-top: 0.3%; }
 
   #stars span {
-    margin: 0 4%;
-    color: white;
-    font-size: 9vw; }
+    margin: 0 3%;
+    width: 8%; }
 
   #lines {
-    top: 43.84617%; } }
+    top: 53.84617%; } }
