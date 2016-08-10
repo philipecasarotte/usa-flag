@@ -3,15 +3,19 @@ $fullline: 100%
 $gloryred: #BF0A30
 $gloryblue: #002868
 $glorywhite: white
+$glorygray: #EFEFEF
+
+$lineRotate: 0.5deg
+$lineRotateOdd: -0.5deg
 
 *
 	margin: 0
 	padding: 0
 	box-sizing: border-box
-	transition: all 0.2s linear
+	transition: all 0.3s ease-in
 
 body
-	background-color: $glorywhite
+	background-color: $glorygray
 	font-family: "Arial", sans-serif
 
 #stars
@@ -35,11 +39,20 @@ body
 	position: relative
 
 #stars span
-	height: 3.5%
 	margin: 0 4.4%
-	width: 3.5%
 	color: white
-	font-size: 3.5%
+	font-size: 3.5vw
+	cursor: pointer
+	display: inline-block
+	font-weight: normal
+
+#stars span:hover
+	color: yellow
+	transform: scale(1.4)
+	-moz-transform: scale(1.4)
+	-webkit-transform: scale(1.4)
+	-o-transform: scale(1.4)
+	-ms-transform: scale(1.4)
 	
 #stars div span:first-child
 	color: yellow
@@ -57,6 +70,8 @@ body
 	background-color: $glorywhite
 	cursor: pointer
 	overflow: hidden
+	padding: 1%
+	box-sizing: border-box
 
 #lines div:nth-child(odd)
 	background-color: $gloryred
@@ -67,10 +82,24 @@ body
 	margin-right: -200px
 
 #lines div:hover
-	-webkit-perspective: 350px
-	perspective: 350px
-	width: 90%
-	transform: perspective( 600px )
+	-webkit-transform: scale(0.9) rotate($lineRotate)
+	-moz-transform: scale(0.9) rotate($lineRotate)
+	-ms-transform: scale(0.9) rotate($lineRotate)
+	-o-transform: scale(0.9) rotate($lineRotate)
+	transform: scale(0.9) rotate($lineRotate)
+	-webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.5)
+	-moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.5)
+	box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.5)	
+
+#lines div:nth-child(odd):hover
+	-webkit-transform: scale(0.9) rotate($lineRotateOdd)
+	-moz-transform: scale(0.9) rotate($lineRotateOdd)
+	-ms-transform: scale(0.9) rotate($lineRotateOdd)
+	-o-transform: scale(0.9) rotate($lineRotateOdd)
+	transform: scale(0.9) rotate($lineRotateOdd)
+	-webkit-box-shadow: 5px 5px 0px 0px rgba(125,5,30,0.5)
+	-moz-box-shadow: 5px 5px 0px 0px rgba(125,5,30,0.5)
+	box-shadow: 5px 5px 0px 0px rgba(125,5,30,0.5)
 
 #lines div:hover > h2
 	opacity: 1
