@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6
 	text-align: center
 
 #stars span
-	text-indent: -199px
 	overflow: hidden
 	margin: 0 5%
 	color: white
@@ -56,7 +55,8 @@ h1, h2, h3, h4, h5, h6
 	height: 100%
 	background: url(../img/star.svg) no-repeat center center
 	background-size: 100% 100%
-	font-size: 0.8vw
+	font-size: 0.6vw
+	color: $glorywhite
 
 #stars span:hover
 	transform: scale(2.2)
@@ -64,8 +64,7 @@ h1, h2, h3, h4, h5, h6
 	-webkit-transform: scale(2.2)
 	-o-transform: scale(2.2)
 	-ms-transform: scale(2.2)
-	text-indent: inherit
-	color: $glorywhite
+	color: $gloryblue	
 
 #lines
 	float: left
@@ -120,7 +119,6 @@ h1, h2, h3, h4, h5, h6
 	#stars
 		width: 100%
 		height: 53.84617%
-		padding: 4% 1% 0 1%
 
 	#stars div
 		margin-top: 0.3%
@@ -131,3 +129,13 @@ h1, h2, h3, h4, h5, h6
 
 	#lines
 		top: 53.84617%
+
+	#lines div
+		width: 7.69231%
+		height: 46.15383%
+		float: left
+		
+	#lines div h2
+		margin-right: 0
+		transform: rotate(90deg)
+		white-space: nowrap
