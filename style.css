@@ -45,8 +45,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background: url(star.svg) no-repeat center center;
   background-size: 100% 100%;
-  font-size: 0.6vw;
-  color: white; }
+  font-size: 0.4vw;
+  color: white;
+  line-height: 1.5vw;}
 
 #stars span:hover {
   transform: scale(2.2);
